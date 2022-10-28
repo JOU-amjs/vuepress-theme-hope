@@ -1163,7 +1163,7 @@ importers:
       fflate: ^0.7.4
       ora: ^6.1.2
       rimraf: 3.0.2
-      vite: 3.1.8
+      vite: 3.2.1
       vue: ^3.2.41
       vue-router: ^4.1.6
     dependencies:
@@ -1183,7 +1183,7 @@ importers:
       '@vuepress/bundler-webpack': 2.0.0-beta.53
       '@vuepress/core': 2.0.0-beta.53
       rimraf: 3.0.2
-      vite: 3.1.8
+      vite: 3.2.1
 
   packages/sitemap2:
     specifiers:
@@ -3545,6 +3545,7 @@ packages:
       - less
       - sass
       - stylus
+      - sugarss
       - supports-color
       - terser
     dev: true
@@ -11676,6 +11677,36 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
+  /vite/3.2.1:
+    resolution: {integrity: sha512-ADtMkfHuWq4tskJsri2n2FZkORO8ZyhI+zIz7zTrDAgDEtct1jdxOg3YsZBfHhKjmMoWLOSCr+64qrEDGo/DbQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.15.12
+      postcss: 8.4.18
+      resolve: 1.22.1
+      rollup: 2.79.1
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /vitest/0.24.3:
     resolution: {integrity: sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==}
     engines: {node: '>=v14.16.0'}
@@ -11708,11 +11739,12 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 3.1.8
+      vite: 3.2.1
     transitivePeerDependencies:
       - less
       - sass
       - stylus
+      - sugarss
       - supports-color
       - terser
     dev: true
